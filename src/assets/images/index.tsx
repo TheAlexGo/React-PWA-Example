@@ -1,0 +1,9 @@
+export { ReactComponent as GoogleIcon } from './google.svg';
+export { ReactComponent as TwitterIcon } from './twitter.svg';
+export { ReactComponent as VkIcon } from './vk.svg';
+export { ReactComponent as StarIcon } from './star.svg';
+export { default as Page404Icon } from './404.svg';
+export { ReactComponent as SortIcon } from './sort.svg';
+export { default as BookmarkIcon } from './bookmark.svg';
+export { default as NightIcon } from './night.svg';
+export { default as DayIcon } from './day.svg';
