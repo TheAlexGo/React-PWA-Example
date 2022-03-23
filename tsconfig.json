@@ -17,8 +17,8 @@
       "@components": [
         "./components/ui"
       ],
-      "@pages/*": [
-        "./components/pages/*"
+      "@pages": [
+        "./components/pages"
       ],
       "@store": [
         "./store"

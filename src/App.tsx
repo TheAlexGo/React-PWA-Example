@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
-import Page404 from 'components/pages/Page404';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { Page404 } from '@pages';
 
 const App = () => {
     return (
