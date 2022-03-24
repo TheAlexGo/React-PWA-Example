@@ -14,6 +14,9 @@
       "@constants/*": [
         "./constants/*"
       ],
+      "@services/*": [
+        "./services/*"
+      ],
       "@components": [
         "./components/ui"
       ],

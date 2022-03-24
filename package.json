@@ -5,6 +5,7 @@
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@storybook/react": "^6.4.19",
+    "axios": "^0.26.1",
     "bem-cn": "^3.0.1",
     "mobx": "^6.5.0",
     "mobx-react": "^7.3.0",

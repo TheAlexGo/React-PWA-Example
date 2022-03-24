@@ -1,19 +1,24 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { Suspense, useEffect } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Page404 } from '@pages';
+import { useController } from './hooks/useController';
 
 const App = () => {
+    const ctrl = useController();
+
+    useEffect(() => {
+        ctrl.initLocale();
+    }, [ctrl]);
+
     return (
-        <Router>
+        <BrowserRouter>
             <Suspense fallback={<div />}>
-                <div className="App">
-                    <Routes>
-                        <Route path="*" element={<Page404 />} />
-                    </Routes>
-                </div>
+                <Routes>
+                    <Route path="*" element={<Page404 />} />
+                </Routes>
             </Suspense>
-        </Router>
+        </BrowserRouter>
     );
 };
 
