@@ -5,7 +5,8 @@ const aliases = (prefix = `src`) => ({
     '@hooks': `${prefix}/hooks`,
     '@assets': `${prefix}/assets`,
     '@utils': `${prefix}/utils`,
-    '@types': `${prefix}/types`
+    '@types': `${prefix}/types`,
+    'bem-cn-custom': `${prefix}/utils/bem-cn-custom`
 });
 
 module.exports = aliases;
