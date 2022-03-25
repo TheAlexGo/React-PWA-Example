@@ -24,16 +24,17 @@ export class AppController {
      * Устанавливает язык ресурса
      */
     switchLang = (lang: LANG) => {
-        console.log('Установлен язык:', lang);
         this.store.setLang(lang);
+        console.log('Установлен язык:', lang);
     };
 
     /**
      * Устанавливает текстовый ресурс
      */
     initResource = (lang: LANG) => {
-        console.log(`Ресурс ${lang} загружен`);
-        this.store.setLocale(this.langService.loadResource(lang));
+        const resource = this.langService.loadResource(lang);
+        this.store.setLocale(resource);
+        console.log(`Ресурс ${lang} загружен:`, resource);
     };
 }
 

@@ -1,5 +1,5 @@
-import packageRu from '@languages/ru.json';
-import packageEn from '@languages/en.json';
+import packageRu from '@languages/ru';
+import packageEn from '@languages/en';
 import { LANG } from 'types';
 
 export class LanguageService {

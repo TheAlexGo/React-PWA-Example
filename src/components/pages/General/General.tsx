@@ -15,8 +15,13 @@ const General: FC = observer(() => {
 
     return (
         <div>
-            {locale['test']}
-            <button onClick={clickHandler}>Switch lang</button>
+            <nav>
+                <a href="/">{locale['nav-general']}</a>
+                <a href="/">{locale['nav-library']}</a>
+                <a href="/">{locale['nav-profile']}</a>
+            </nav>
+            <h1>{locale['error-network']}</h1>
+            <button onClick={clickHandler}>{locale['switch-lang']}</button>
         </div>
     );
 });
