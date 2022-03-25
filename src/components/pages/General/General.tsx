@@ -1,17 +1,11 @@
 import React, { FC } from 'react';
-
-import { useStore } from '@hooks/useStore';
-import { useController } from '@hooks/useController';
-import { LANG } from 'types';
 import { observer } from 'mobx-react';
 
-const General: FC = observer(() => {
-    const { locale, lang } = useStore();
-    const { switchLang } = useController();
+import { useStore } from '@hooks/useStore';
+import { SwitchLangButton } from '@components';
 
-    const clickHandler = () => {
-        switchLang(lang === LANG.EN ? LANG.RU : LANG.EN);
-    };
+const General: FC = observer(() => {
+    const { locale } = useStore();
 
     return (
         <div>
@@ -21,7 +15,7 @@ const General: FC = observer(() => {
                 <a href="/">{locale['nav-profile']}</a>
             </nav>
             <h1>{locale['error-network']}</h1>
-            <button onClick={clickHandler}>{locale['switch-lang']}</button>
+            <SwitchLangButton />
         </div>
     );
 });
