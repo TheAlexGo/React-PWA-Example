@@ -1,17 +1,26 @@
-import { action, makeAutoObservable } from 'mobx';
 import { createContext } from 'react';
+import { action, makeAutoObservable } from 'mobx';
+
+import { LANG } from 'types';
 
 export class Store {
-    counter = 0;
+    lang = LANG.RU;
+
+    locale: Record<string, string> = {};
 
     constructor() {
         makeAutoObservable(this);
     }
 
     @action
-    setCounter = (counter: number) => {
-        this.counter = counter;
-    };
+    setLang(lang: LANG) {
+        this.lang = lang;
+    }
+
+    @action
+    setLocale(locale: Record<string, string>) {
+        this.locale = locale;
+    }
 }
 
 export const store = new Store();

@@ -20,14 +20,17 @@
       "@components": [
         "./components/ui"
       ],
+      "@languages/*": [
+        "./languages/*"
+      ],
       "@pages": [
         "./components/pages"
       ],
       "@store": [
         "./store"
       ],
-      "@hooks": [
-        "./hooks"
+      "@hooks/*": [
+        "./hooks/*"
       ],
       "bem-cn-custom": [
         "./utils/bemCnCustom"

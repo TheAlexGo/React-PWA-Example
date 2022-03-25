@@ -1,3 +1,8 @@
+export enum LANG {
+    RU = 'ru-RU',
+    EN = 'en-EN'
+}
+
 export interface IApi {
     getManga: (value: string) => void;
 }
