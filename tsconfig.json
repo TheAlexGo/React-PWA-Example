@@ -28,6 +28,9 @@
       ],
       "@hooks": [
         "./hooks"
+      ],
+      "bem-cn-custom": [
+        "./utils/bemCnCustom"
       ]
     },
     "downlevelIteration": true,

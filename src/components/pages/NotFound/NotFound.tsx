@@ -1,12 +1,16 @@
 import React from 'react';
+import block from 'bem-cn-custom';
 
 import { Page404Icon } from '@assets/images';
 import { Button } from '@components';
-import style from './Page404.module.scss';
 
-const Page404 = () => (
-    <div className={style.error404}>
-        <div className={style.error404__top}>
+import './NotFound.styl';
+
+const classnames = block('not-found');
+
+const NotFound = () => (
+    <div className={classnames()}>
+        <div className={classnames('top')}>
             <img src={Page404Icon} alt="Error 404: Not Founded" />
             <h1>404</h1>
             <p>Я что-то нажал и всё сломалось</p>
@@ -17,4 +21,4 @@ const Page404 = () => (
     </div>
 );
 
-export default Page404;
+export default NotFound;
