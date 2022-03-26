@@ -1,5 +1,3 @@
-const path = require('path');
-const alias = require(`../src/config/aliases`);
 const configCraco = require('../craco.config');
 
 module.exports = {
