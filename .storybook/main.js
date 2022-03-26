@@ -2,8 +2,8 @@ const configCraco = require('../craco.config');
 
 module.exports = {
   "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/components/ui/**/*.stories.mdx",
+    "../src/components/ui/**/*.stories.@(ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-links",
