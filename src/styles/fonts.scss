@@ -4,7 +4,6 @@
         font-weight: $weight;
         font-style: $style;
         src: url('#{$file-path}.ttf') format('truetype');
-        src: url('#{$file-path}.eot'), url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff');
     }
 }
 

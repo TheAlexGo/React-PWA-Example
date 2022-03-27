@@ -1,10 +1,10 @@
 import React, { Suspense, useEffect } from 'react';
+import { observer } from 'mobx-react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { General, Page404 } from '@pages';
 import { useController } from '@hooks/useController';
 import { useStore } from '@hooks/useStore';
-import { observer } from 'mobx-react';
 
 const App = observer(() => {
     const { initResource } = useController();
