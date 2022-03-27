@@ -5,6 +5,9 @@
       "@assets/*": [
         "./assets/*"
       ],
+      "@fonts/*": [
+        "./assets/fonts/*"
+      ],
       "@styles/*": [
         "./styles/*"
       ],
@@ -17,11 +20,14 @@
       "@services/*": [
         "./services/*"
       ],
-      "@components": [
-        "./components/ui"
-      ],
       "@languages/*": [
         "./languages/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@components": [
+        "./components/ui"
       ],
       "@pages": [
         "./components/pages"
@@ -29,11 +35,11 @@
       "@store": [
         "./store"
       ],
-      "@hooks/*": [
-        "./hooks/*"
-      ],
       "bem-cn-custom": [
         "./utils/bemCnCustom"
+      ],
+      "@images": [
+        "./assets/images"
       ]
     },
     "downlevelIteration": true,

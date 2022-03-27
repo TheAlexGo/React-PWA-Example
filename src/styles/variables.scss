@@ -1,0 +1,44 @@
+$c-black: #000000;
+$c-black-100: #838383;
+$c-black-200: #484848;
+$c-black-300: #313131;
+$c-black-400: #222222;
+$c-black-500: #191818;
+
+$c-white: #FFF;
+$c-white100: #F8F7F6;
+
+$c-navy100: #D8D4F5;
+$c-navy200: #B0A7EA;
+$c-navy300: #887ADF;
+$c-navy400: #6553D5;
+$c-navy500: #412ACB;
+$c-navy600: #3623A9;
+$c-navy700: #291A80;
+$c-navy800: #1C1257;
+$c-navy900: #0F0A2F;
+
+$c-error100: #FBD2CD;
+$c-error200: #F9B1A8;
+$c-error300: #F58D7F;
+$c-error400: #F26653;
+$c-error500: #EF432C;
+$c-error600: #C73825;
+$c-error700: #962A1C;
+$c-error800: #671D13;
+$c-error900: #360F0A;
+
+$c-mainColorText: $c-white;
+$c-secondaryColorText: $c-black-200;
+$c-lightColorText: $c-black-100;
+$c-mainColorBg: $c-black-500;
+
+// Main
+$c-mainColorButtonBg: $c-black-400;
+$c-mainColorLightButtonBg: $c-black-300;
+$c-buttonTextColor: $c-white;
+// Primary
+$c-primaryColorButtonBg: $c-navy500;
+$c-primaryColorLightButtonBg: $c-navy400;
+
+$c-mainColorFilter: invert(1);
